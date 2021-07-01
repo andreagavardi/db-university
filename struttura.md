@@ -1,7 +1,3 @@
-Nella cartella della repo create un file struttura.md nel quale inserite la stuttura delle tabelle come fatto in classe con me.
-Poi usate diagrams.net per creare il diagramma E-R. Completato il diagramma cliccate nel menu in altro su FILE > EMBED > HTML per esportare il diagramma in formato html.
-Copiate il codice che vi dá, create nella repo un file index.html e nel body incollate il codice come fatto in classe stamattina.
-
 <!-- Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti una università:
 - sono presenti diversi dipartimenti, ciascuno con i propri corsi di laurea;
 - ogni corso di laurea è formato da diversi corsi;
@@ -39,7 +35,7 @@ Copiate il codice che vi dá, create nella repo un file index.html e nel body in
 - nome VARCHAR(20) NOTNULL INDEX
 - cognome VARCHAR(20) NOTNULL INDEX
 - contatti VARCHAR(255) NULL
-- corso_di_laurea_ID INT FK NOTNULL INDEX
+- corso_di_laurea_ID INT FK NOTNULL UNIQUE INDEX
 
 ## appelli d'esame
 
