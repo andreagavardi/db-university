@@ -19,9 +19,7 @@ if ($connection && $connection->connect_error) {
 }
 
 //var_dump($_GET['year']);
-if ($_GET['year'] != null) {
-    $anno_di_iscrizione = $_GET['year'];
-}
+$anno_di_iscrizione = $_GET['year'];
 #creo la query
 $sql = "SELECT `students`.`name`,students.surname,students.date_of_birth,students.email,students.enrolment_date\n"
 
