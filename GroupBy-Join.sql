@@ -66,7 +66,8 @@ ON course_teacher.teacher_id = teachers.id
 ORDER BY(`degrees`.`name`) ASC;
 
 /* Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54) */
-SELECT `departments`.`name` AS nome_dipartimento, departments.address, departments.website, teachers.name AS nome_docente, teachers.surname AS cognome_docente 
+SELECT `departments`.`name` AS nome_dipartimento, departments.address, 
+departments.website, teachers.name AS nome_docente, teachers.surname AS cognome_docente 
 FROM `departments`
 JOIN `degrees`
 ON degrees.department_id = departments.id
