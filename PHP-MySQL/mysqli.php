@@ -47,6 +47,6 @@ if ($result && $result->num_rows > 0) {
     echo "nessun risultato";
 } else {
     echo "errore nella query";
-}
+};
 
-$connection->close;
+//$connection->close;
